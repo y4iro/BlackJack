@@ -142,8 +142,8 @@ function deal(){
 		
 		
 		if(playerTotal>21){
-			$("#message").html('Bubbies 21!');
-			var reloadGame = "<div class='btn' id='deal'>Deal</div>";
+			$("#message").html('EXEDISTE!');
+			var reloadGame = "<div class='btn' id='deal'>CERRAR</div>";
 			$(".buttons").html(reloadGame);
 			/// Pay up
 			$("#bet").html('0');	
@@ -179,8 +179,8 @@ function deal(){
 			}
 			
 			if(dealerTotal>21){
-				$("#message").html('REPARTIDOR HIZO 21!');	
-				var reloadGame = "<div class='btn' id='deal'>Deal</div>";
+				$("#message").html('DEALER EXEDIO!');	
+				var reloadGame = "<div class='btn' id='deal'>CERRAR</div>";
 				$(".buttons").html(reloadGame);
 				clearInterval(keepDealing);
 				//PAGAR
@@ -218,13 +218,13 @@ function deal(){
 					$("#money").html(parseInt(money) - parseInt(bet));
 				}
 				if(playerTotal==dealerTotal){
-					$("#message").html('Push!');
+					$("#message").html('EMPATE!');
 					var bet = $("#bet").html();
 					var money = $("#money").html();
 					$("#money").html(parseInt(bet) + parseInt(money));
 					$("#bet").html('0');
 				}
-				var reloadGame = "<div class='btn' id='deal'>Deal</div>";
+				var reloadGame = "<div class='btn' id='deal'>CERRAR</div>";
 				$(".buttons").html(reloadGame);
 				clearInterval(keepDealing);
 				return false;
