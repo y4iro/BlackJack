@@ -159,7 +159,7 @@ function deal(){
 		$("#dealerTotal").css("visibility","visible");
 		$(".card2").removeClass("flipped");
 		
-		//// Keep adding a card until over 17 or dealer busts
+		//SEGUIR REPARTIENDO MIENTRAS TENGA POR DEBAJO DE 21
 		var keepDealing = setInterval(function(){
 								 
 			var dealerTotal = $("#dealerTotal").html();
